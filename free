@@ -1,7 +1,7 @@
 #!/bin/bash
 
-username=test
-password=test
+username=${1:-"test"}
+password=${2:-"test"}
 
 curl -X POST \
     -H "Origin: https://login.aut.ac.ir" \
@@ -12,6 +12,5 @@ curl -X POST \
     -H "Referer: https://login.aut.ac.ir/login" \
     -H "Accept-Encoding: gzip, deflate, br" \
     -H "Accept-Language: en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,fa;q=0.2" \
-    -H "Cookie: loginID=2976744070; _ga=GA1.3.1530151081.1478108736" \
     -H "OS: Windows" -H "Cache-Control: no-cache" \
     -d "dst=&erase-cookie=false&password=$password&popup=false&username=$username" "https://login.aut.ac.ir/login"
