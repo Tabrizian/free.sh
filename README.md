@@ -9,5 +9,10 @@ rid of this new policy. I tried to use this bash script for getting rid of this 
 Running is pretty simple:  
 ```sh
 git clone https://github.com/Tabrizian/free.sh  && cd free.sh
+# For logging in with default arguments
 ./free
+# For logging in with your username and password
+./free yourautusername password
 ```
+**NOTE:** Use it without your postfix *@aut.ac.ir*.  
+By default it logins with the test username and password.
