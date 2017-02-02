@@ -1,8 +1,8 @@
 # free.sh
  Get rid of AUT Login on servers
 ## Introduction
-With the beginning of the AUT policies for internet usage, servers has encountered lots of problem for getting 
-rid of this new policy. I tried to use this bash script for getting rid of this system.
+With the beginning of the AUT policies for internet usage, servers has encountered lots of problems. To get
+rid of this new policy, I tried to write this bash script. Hope it helps :)
 
 
 ## Running
