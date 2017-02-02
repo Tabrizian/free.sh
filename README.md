@@ -17,4 +17,4 @@ git clone https://github.com/Tabrizian/free.sh  && cd free.sh
 ./logout
 ```
 **NOTE:** Use it **without** your postfix i.e. *@aut.ac.ir*.  
-By default it logins with the test username and password.*(**
+By default it logins with the **test** username and **test** password.
