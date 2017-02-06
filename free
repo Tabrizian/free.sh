@@ -3,7 +3,7 @@
 username=${1:-"test"}
 password=${2:-"test"}
 
-curl -s -I -L -X POST \
+curl -X POST \
     -H "Content-Type: application/x-www-form-urlencoded" \
-    -d "password=$password&username=$username" \
+    -d "erase-cookie=false&password=$password&popup=false&username=$username" \
     "https://login.aut.ac.ir/login"
