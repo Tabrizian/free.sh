@@ -4,13 +4,5 @@ username=${1:-"test"}
 password=${2:-"test"}
 
 curl -X POST \
-    -H "Origin: https://login.aut.ac.ir" \
-    -H "Upgrade-Insecure-Requests: 1" \
-    -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" \
     -H "Content-Type: application/x-www-form-urlencoded" \
-    -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" \
-    -H "Referer: https://login.aut.ac.ir/login" \
-    -H "Accept-Encoding: gzip, deflate, br" \
-    -H "Accept-Language: en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,fa;q=0.2" \
-    -H "OS: Windows" -H "Cache-Control: no-cache" \
     -d "dst=&erase-cookie=false&password=$password&popup=false&username=$username" "https://login.aut.ac.ir/login"
