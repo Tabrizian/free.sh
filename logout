@@ -1,5 +1,12 @@
 #!/bin/bash
-curl -X POST \
+
+code=`curl -k -s -o /dev/null -w "%{http_code}" \
     -H "Content-Type: application/x-www-form-urlencoded" \
     -d 'erase-cookie=true' \
-    "http://login.aut.ac.ir/logout"
+    "http://login.aut.ac.ir/logout"`
+
+if [ $code == '200' ]; then
+	echo "Logout was successful."
+else
+	echo "You already logged out"
+fi
